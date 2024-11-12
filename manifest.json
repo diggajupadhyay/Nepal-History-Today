@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Nepal History Today",
+  "version": "1.0",
+  "description": "Get historical events, births, deaths, and holidays related to Nepal. This extension fetches data from \"On This Day\" and highlights any significant events with the keyword \"Nepal\".",
+  "icons": {
+    "48": "icons/icon.png",
+    "128": "icons/icon.png"
+  },
+  "permissions": [
+    "https://api.wikimedia.org/*"
+  ],
+  "browser_action": {
+    "default_icon": "icons/icon.png",
+    "default_title": "Nepal History Today",
+    "default_popup": "popup/index.html"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+}
